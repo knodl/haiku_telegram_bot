@@ -1,7 +1,8 @@
 from haiku_bot import get_haiku
 import telebot
-from tok import token
+import os
 
+token = os.environ.get('TGTOKEN')
 bot = telebot.TeleBot(token)
 
 
