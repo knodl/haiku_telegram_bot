@@ -22,7 +22,7 @@ def count_syllables(word: str) -> int:
     for s in word:
         if s in en_vowels or s in ru_vowels:
             cnt += 1
-    if word[-1] == 'e':
+    if len(word) > 0 and word[-1] == 'e':
         cnt -= 1
     if cnt == 0:
         cnt = 1
